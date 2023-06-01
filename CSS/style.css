@@ -165,7 +165,7 @@ main hr {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1360px){
+@media only screen and (max-width: 1366px){
     .lefts {
         font-size: 2rem;
     }
@@ -219,18 +219,26 @@ main hr {
         width: 200px;
         padding-bottom: 100px;
     }
-    
+    .seconds .vertical{
+        height: 1px;
+        width: 150px;
+        background-color: white;
+        margin: 0px 10px;
+    }
 .seconds .box {
     background-color: white;
-    width: 107vw;
-    height: 2px;
+    width: 2px;
+    height: 400px;
     margin: 60px;
-    display: flex;
-    padding: 0px 0px;
+    padding: 60px 0px;
 }
 #projects iframe {
     width: 1120px;
     height: 768px;
     padding: 0px 0px;
     border: 0px;
-}}
+}
+.lefts {
+    font-size: 1.5rem;
+}
+}
