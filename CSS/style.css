@@ -18,14 +18,16 @@ nav {
     height: 80px;
     background-color: rgb(18, 18, 53);
     top: 0%;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    opacity: 1;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     top: 0%;
-    position: sticky;
+    /* position: fixed; */
 }
 
 nav ul li {
@@ -36,6 +38,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -71,10 +74,10 @@ nav img{
     align-items: center;
 }
 
-/* .firsts>div {
+.firsts>div {
     width: 40%;
 
-} */
+}
 
 .lefts {
     font-size: 4rem;
@@ -82,7 +85,7 @@ nav img{
 }
 
 .rights img {
-    width: 80%;
+    width: 70%;
 
 }
 
@@ -142,6 +145,12 @@ main hr {
     top: 45px;
     left: -60px;
     width: 150px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.vertical-title:hover{
+    color: wheat;
 }
 .vertical-desc{
     position: relative;
@@ -164,7 +173,22 @@ main hr {
     color: black;
     text-decoration: none;
 }
-
+.video video{
+    width: 500px; 
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
 @media only screen and (max-width: 1366px){
     .lefts {
         font-size: 2rem;
@@ -205,6 +229,7 @@ main hr {
     nav{
         flex-direction: column;
         height: 640px;
+        position: relative;
     }
     ul{
         flex-direction: column;
@@ -221,7 +246,7 @@ main hr {
     }
     .seconds .vertical{
         height: 1px;
-        width: 150px;
+        width: 100px;
         background-color: white;
         margin: 0px 10px;
     }
@@ -241,4 +266,39 @@ main hr {
 .lefts {
     font-size: 1.5rem;
 }
+.firsts>div {
+    width: 60%;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box img{
+    left: -50px;
+    top: -20px;
+}
+.vertical-title {
+    top: -70px;
+    left: 114px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#projects iframe{
+        width:90%;
+        height: 850px;
+        margin: 0px 15px;
+        border: 0px;
+}
+.video{
+    padding: 0px 80px;
+}
+.video video{
+    width: 200px; 
+}
+.burger{
+    display: block;
+}
+  
 }
