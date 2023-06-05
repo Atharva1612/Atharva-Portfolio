@@ -226,14 +226,22 @@ main hr {
 }
 
 @media only screen and (max-width: 1120px){
-    nav{
+    .nav{
         flex-direction: column;
         height: 640px;
         position: relative;
+        transition: all 0.7s ease-out;
+        display: none;
     }
     ul{
         flex-direction: column;
     }
+    /* .right{
+        display: none;
+    }
+    .left{
+        display: none;
+    } */
     .firsts{
         flex-direction: column-reverse;
     }
@@ -300,5 +308,10 @@ main hr {
 .burger{
     display: block;
 }
-  
+.nav-active{
+    flex-direction: column;
+    height: 640px;
+    position: relative;
+    display: flex;
+} 
 }
